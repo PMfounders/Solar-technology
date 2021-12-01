@@ -1,0 +1,105 @@
+.inform {
+  padding: 140px 0;
+  @media (max-width: 1199px) {
+    padding: 50px 0;
+  }
+  .conteiner {
+    display: flex;
+  }
+}
+.inform__block {
+  width: 50%;
+  &:nth-child(1) {
+    padding-right: 60px;
+    @media (max-width: 575px) {
+      width: 70%;
+      padding-right: 0px;
+    }
+  }
+  &__title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+
+    color: $gray;
+    margin-bottom: 60px;
+    @media (max-width: 1199px) {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 575px) {
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+  }
+  &__description {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: $gray;
+    margin-bottom: 40px;
+    @media (max-width: 1199px) {
+      font-size: 11px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 575px) {
+      font-size: 10px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  &__btn {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    color: #4d4d4d;
+    padding: 20px 30px;
+    width: 200px;
+    border: 2px solid $yellow;
+    border-radius: 3px;
+    @media (max-width: 1199px) {
+      width: 125px;
+      padding: 15px 20px;
+      font-size: 12px;
+    }
+    @media (max-width: 575px) {
+      font-size: 10px;
+      line-height: 18px;
+    }
+    &:before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+      background: #faa61a;
+      border-radius: 1px;
+      transition: all 0.6s ease;
+    }
+    &:hover:before {
+      width: 100%;
+      z-index: -1;
+    }
+  }
+  &__img {
+    @media (max-width: 575px) {
+      margin-top: 58px;
+    }
+  }
+}
